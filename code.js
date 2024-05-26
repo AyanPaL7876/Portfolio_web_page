@@ -59,3 +59,7 @@ function navLinkClick() {
     navToggler.click();
   }
 }
+
+window.oncontextmenu = () =>{
+  return false;
+}
