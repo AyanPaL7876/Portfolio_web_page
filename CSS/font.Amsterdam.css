@@ -1,0 +1,9 @@
+@font-face {
+    font-family: amsterdam;
+    src: url(../Assets/Amsterdam\ 400.ttf);
+}
+
+.amsterdam {
+    font-family: amsterdam;
+    letter-spacing: 0.1em;
+}

@@ -1,176 +1,421 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!doctype html>
+<html>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ayan's Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Overlock:ital@1&family=Playpen+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles.css">
-    <link rel="stylesheet" href="./styleForMob.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
-</head>
-<body>
-    <header>
-        <!-- nav bar  -->
-        <nav>
-            <div class="left"><span id="head">Ayan's</span> Portfolio</div>
-            <div class="right">
-                <ul>                    
-                    <li> <a href="#">Home</a></li>
-                    <li> <a href="#">About Me</a></li>
-                    <li> <a href="#">Education</a></li>
-                    <li> <a href="#">Skills</a></li>
-                    <!-- <li> <a href="#">Project</a></li> -->
-                    <li> <a href="#">Contact Me</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Ayan pal - Portfolio</title>
 
+    <link rel="stylesheet" href="./CSS/output.css">
+    <link rel="stylesheet" href="./CSS/custom.btn.css">
+    <link rel="stylesheet" href="./CSS/custom.nav.css">
+    <link rel="stylesheet" href="./CSS/custom.skill.card.css">
+    <link rel="stylesheet" href="./CSS/custom.project.card.css">
+    <link rel="stylesheet" href="./CSS/custom.contuct.from.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/style.clock.css">
+    <link rel="stylesheet" href="./CSS/font.Amsterdam.css">
+  </head>
 
-    <main>
-        <!-- 1st section  -->
-        <Section class="firstSection" id="S1">
-           
-            <div class="leftSection">
-                <span id="name" style="color:white;"></span>
+  <body>
+    <span class="body-overlay"></span>
+    <nav class="container fixed top-0 left-0 min-w-full h-16 flex justify-center items-center z-[100] ">
+      <div class="site-navbar flex justify-between items-center w-5/6  text-[#fff] ">
+        <a class="text-2xl font-bold flex items-center cursor-pointer" href="#" >
+          <!-- <img src="./logo.png" alt="logo" class="w-[200px]"> -->
+          <svg width="200" height="148" viewBox="0 0 855 148" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M723.807 148H707.486L752.869 60.7273H771.491L787.898 148H771.577L759.688 78.1989H759.006L723.807 148ZM730.369 113.781H776.264L774.176 126.182H728.281L730.369 113.781Z" fill="white"/>
+            <path d="M798.324 148L812.812 60.7273H828.111L815.795 135.131H854.446L852.273 148H798.324Z" fill="white"/>
+            <path d="M234.011 146H206.81L282.449 0.54545H313.486L340.83 146H313.628L293.812 29.6648H292.676L234.011 146ZM244.949 88.9688H321.44L317.96 109.636H241.469L244.949 88.9688Z" fill="white"/>
+            <path d="M621.54 147L645.688 1.54545H699.736C710.91 1.54545 719.93 3.62878 726.795 7.79545C733.708 11.9148 738.491 17.5966 741.142 24.8409C743.794 32.0379 744.362 40.2528 742.847 49.4858C741.331 58.7187 738.017 66.9574 732.903 74.2017C727.837 81.3987 721.137 87.0805 712.804 91.2472C704.471 95.3665 694.693 97.4261 683.472 97.4261H647.463L650.943 76.4034H683.756C690.432 76.4034 696.066 75.2434 700.659 72.9233C705.299 70.6032 708.945 67.4309 711.597 63.4062C714.295 59.3343 716.071 54.6941 716.923 49.4858C717.776 44.2301 717.515 39.6136 716.142 35.6364C714.816 31.6591 712.212 28.5578 708.33 26.3324C704.494 24.0597 699.239 22.9233 692.562 22.9233H667.705L647.037 147H621.54Z" fill="white"/>
+            <path d="M566.318 58.7273L551.83 146H538.151L506.446 85.6591H505.679L495.622 146H480.324L494.812 58.7273H508.619L540.324 119.153H541.091L551.105 58.7273H566.318Z" fill="white"/>
+            <path d="M408.807 146H392.486L437.869 58.7273H456.491L472.898 146H456.577L444.688 76.1989H444.006L408.807 146ZM415.369 111.781H461.264L459.176 124.182H413.281L415.369 111.781Z" fill="white"/>
+            <path d="M342.719 58.7273H359.977L375.233 97.5483H376.17L404.125 58.7273H421.384L380.688 113.102L375.19 146H359.977L365.432 113.102L342.719 58.7273Z" fill="white"/>
+            <path d="M0.610796 78.2784L2.61364 66.5597L64.9574 39.5L62.571 54.2443L18.125 72.2273L18.6364 71.4602L18.3381 73.3778L17.9545 72.5682L56.5625 90.5938L54.0909 105.295L0.610796 78.2784ZM123.509 15.6364L78.1676 120.125H65.1278L110.469 15.6364H123.509ZM185.671 78.2784L123.242 105.295L125.714 90.5938L170.075 72.5682L169.563 73.3778L169.862 71.4602L170.245 72.2273L131.722 54.2443L134.109 39.5L187.674 66.5597L185.671 78.2784Z" fill="white"/>
+          </svg>
+        </a>
+        <ul class="flex justify-end uppercase items-end nav-hover">
+          <li><a href="#home" class="cursor-pointer">Home</a></li>
+          <li><a href="#about" class="cursor-pointer">About</a></li>
+          <li><a href="#skills" class="cursor-pointer">skills</a></li>
+          <li><a href="#projects" class="cursor-pointer">Projects</a></li>
+          <li><a href="#contuctMe" class="cursor-pointer">Contact</a></li>
+        </ul>
 
-            </div>
-            <div class="rightSection">
-                <img src="./image_forSection1.png" alt="">
-            </div>
-        </Section>
+        <!-- nav-toggler for mobile version only -->
+        <button class="nav-toggler">
+          <span></span>
+        </button>
 
-        <hr style="
-            border : 0;
-            background : #6f00ff;
-            height : 1.5px;
-            margin : 40px 40px"
-        >
+      </div>
+    </nav>
 
-        <!-- 2nd section  -->
-        <Section class="SecoundSection" id="S2">
-            <div class="leftSection2">
-                <img src="./inage_forSction2.png" alt=""> 
-            </div>
-            <div class="rightSection2">
-                <h3>About me</h3><br>
-                <p><b>I am availabe for C++, JAVA and PYTHON developing.</b></p><br>
-                <p><i>Hi, i am Ayan Pal, From India. I am computer application student. I am biginner level devoloper. And now i am lerning fage. </i></p><br>
-
-                <table>
-                    <tr>
-                        <th>Name : </th>
-                        <td>Ayan pal</td>
-                    </tr>
-                    
-                    <tr>
-                        <th>Email : </th>
-                        <td>ayanpal260@gmail.com</td>
-                    </tr>
-
-                    <tr>
-                        <th>Birth day : </th>
-                        <td>10 Jun, 2004</td>
-                    </tr>
-                    
-                    <tr>
-                        <th>Study : </th>
-                        <td>Adamas university</td>
-                    </tr>
-        
-                    <tr>
-                        <th>City : </th>
-                        <td>Kolkata, India</td>
-                    </tr>
-
-                </table>
-            </div>
-        </Section>
-        
-        <hr style="
-            border : 0;
-            background : #6f00ff;
-            height : 1.5px;
-            margin : 0px 40px 40px 40px"
-        >
-
-        <section class="educationsection" id="S3">
-            <h3>Education</h3>
-            <div id="education">
-                <div class="education">
-                    <p><b>H.S (2022)</b> : <i>Karimpur Jagannath High School</i></p>
-                    <p><b>BCA (2025)</b> : <i>Adamas University (Kolkata) </i></p>
-                </div>
-            </div>
-        </section>
-
-        <hr style="
-            border : 0;
-            background : #6f00ff;
-            height : 1.5px;
-            margin : 40px 40px"
-        >
-
-        <section class="skillsection" id="S4">
-            <h3>Skills</h3>
-            <div class="skills">
-                <div id="skill1">
-                    <p><b>C</b></p>
-                    <p><b>C++</b></p>
-                    <p><b>Java</b></p>
-                </div>
-                <div id="skill2">
-                    <p><b>Python</b></p>
-                    <p><b>MySQL</b></p>
-                    <p><b>HTML</b></p>
-                </div>
-                <div id="skill3">
-                    <p><b>CSS</b></p>
-                    <p><b>JS</b></p>
-                </div>
-                <div id="skill4">
-                </div>
-            </div>
-        </section>
-
-        <hr style="
-            border : 0;
-            background : #6f00ff;
-            height : 1.5px;
-            margin : 40px 40px 0px 40px;"
-        >
-
-        <section class="contactsection" id="S4">
-            <h3 style="color: #6600ff">Contact Me </h3>
-            <div class="social-icons">
-                <a href="https://www.facebook.com/ayan.pal.3304" target="_blank" title="facebook"> 
-                  <i class="fa fa-facebook-square" aria-hidden="true"></i>
+    <main class="overflow-y-auto w-full h-full flex-col no-scrollbar text-neutral-950">
+      <section id="home" class="w-full min-h-full h-auto flex flex-col items-center justify-center relative">
+          <div class="w-4/6 flex flex-col justify-start section-content">
+              <h1 class="home-heading text-[55px] font-bold tracking-wide ">I Am <span id="typing" class="text-[#5757ef]"></span></h1>
+              <p class="home-content w-4/6 py-10 font-semibold text-lg">I am 20 tears old, Now i am a student. studing at ADAMAS UNIVERSITY. I really like   to think creatively as well as making things pretty abd easy to use. I can't stop learning new things, The more the better. I     also like writing codes </p>
+              <div class="home-btn flex ">
+                <a  href= "https://www.canva.com/design/DAF86wHZJzA/1c_FVMnTH0YnnQOkpPji9g/edit?utm_content=DAF86wHZJzA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank">
+                  <button class="resume-btn">
+                      Resume
+                      <div class="transition"></div>
+                  </button>
                 </a>
-
-                <a href="https://twitter.com/AyanPaL7876" target="_blank" title="twitter"> 
-                  <i class="fa fa-twitter-square" aria-hidden="true"></i>
-                </a>
-
-                <a href="https://www.instagram.com/_ayan_pal_2004/" target="_blank" title="instagram">  
-                  <i class="fa fa-instagram" aria-hidden="true"></i>
-                </a>
-                
-                <a href="https://www.linkedin.com/in/ayan-pal-6a4297255/" target="_blank" title="linkedin">
-                  <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-                </a>
-                
-                
+                <div class="flex ml-10">
+                  <!-- LeetodeIcon  -->
+                  <a href="https://leetcode.com/u/Ayan_7876/" target="_blank" rel="noreferrer noopener"
+                    class="grid place-items-center hover:scale-125">
+                    <img src="./Assets/leetcode.svg" alt="leetcodeIcon" class="h-[45px] w-[45px] p-0 m-0">
+                  </a>
+                  <!-- LinkedInIcon -->
+                  <a href="https://www.linkedin.com/in/ayan-pal-6a4297255/" target="_blank" rel="noreferrer noopener"
+                    class="mx-5 grid place-items-center hover:scale-125 ">
+                    <box-icon type='logo' name='linkedin-square' color='#000' class="h-[50px] w-[50px]"></box-icon>
+                  </a>
+                  <!-- GitHubIcon  -->
+                  <a href="https://github.com/AyanPaL7876" target="_blank" rel="noreferrer noopener"
+                    class="grid place-items-center hover:scale-125">
+                    <box-icon type='logo' name='github' color='#000' class="h-[50px] w-[50px]"></box-icon>
+                  </a>
+                </div>
               </div>
-        </section>
+          </div>
+      </section>
+      <hr>
 
+      <section id="about" class="w-full min-h-full h-auto flex flex-col gap-[50px] items-center justify-center relative">
+        <h1 class="about-heading text-[45px] font-bold text-[#5757ef]">About me</h1>
+        <div class="w-4/6 flex justify-between items-center relative section-content">
+          <p class="about-content w-1/2 py-10 font-medium text-lg">I am currently pursuing a Bachelor's degree in Computer Applications at Adamas University. My coursework includes a diverse range of subjects, providing me with a comprehensive understanding of various computer applications and software development.<br><br>I am eager to apply the knowledge and skills I have gained from my studies in a professional setting. I am particularly interested in development.<br><br>Looking forward to graduating in 2025 and starting my career in the tech industry.</p>
+          <div class="clock">
+            <img src="./clock template-01.svg" >
+            <div class="hour hand" id="hour"></div>
+            <div class="minute hand" id="minute"></div>
+            <div class="seconds hand" id="seconds"></div>
+          </div>
+        </div>
+      </section>
+      <hr>
+      
+      <section id="skills" class="w-full min-h-full h-auto flex flex-col gap-[50px] items-center justify-center relative">
+            <h1 class="skills-heading text-[45px] font-bold text-[#5757ef]">My skills</h1>
+            <div class="skills-content flex justify-around w-4/6 items-center section-content">
+                <div class="skill-bars">
+                    <div class="bar">
+                      <div class="info">
+                        <span>HTML <box-icon name='html5' type='logo' ></box-icon></span>
+                      </div>
+                      <div class="progress-line html">
+                        <span></span>
+                      </div>
+                    </div>
+
+                    <div class="bar">
+                      <div class="info">
+                        <span>CSS <box-icon name='css3' type='logo' ></box-icon></span>
+                      </div>
+                      <div class="progress-line css">
+                        <span></span>
+                      </div>
+                    </div>
+
+                    <div class="bar">
+                      <div class="info">
+                        <span>js <box-icon type='logo' name='nodejs'></box-icon></span>
+                      </div>
+                      <div class="progress-line js">
+                        <span></span>
+                      </div>
+                    </div>
+
+                    <div class="bar">
+                      <div class="info">
+                        <span>MongoDB</span>
+                      </div>
+                      <div class="progress-line mongodb">
+                        <span></span>
+                      </div>
+                    </div>
+
+                    <div class="bar">
+                      <div class="info">
+                        <span>MySQL</span>
+                      </div>
+                      <div class="progress-line mysql">
+                        <span></span>
+                      </div>
+                    </div>
+                </div>
+                
+                <div class="skill-bars">
+                    <div class="bar">
+                      <div class="info">
+                        <span>React</span>
+                      </div>
+                      <div class="progress-line react">
+                        <span></span>
+                      </div>
+                    </div>
+
+                    <div class="bar">
+                      <div class="info">
+                        <span>Tailwind</span>
+                      </div>
+                      <div class="progress-line tailwind">
+                        <span></span>
+                      </div>
+                    </div>
+
+                    <div class="bar">
+                      <div class="info">
+                        <span>C++</span>
+                      </div>
+                      <div class="progress-line cpp">
+                        <span></span>
+                      </div>
+                    </div>
+
+                    <div class="bar">
+                      <div class="info">
+                        <span>C</span>
+                      </div>
+                      <div class="progress-line c">
+                        <span></span>
+                      </div>
+                    </div>
+
+                    <div class="bar">
+                      <div class="info">
+                        <span>GitHub</span>
+                      </div>
+                      <div class="progress-line github">
+                        <span></span>
+                      </div>
+                    </div>
+                </div>
+            </div>
+      </section>
+      <hr>
+
+      <section id="projects" class="w-full min-h-full h-auto flex flex-col gap-[50px] items-center justify-center relative">
+        <h1 class="project-heading text-[45px] font-bold text-[#5757ef]">My Work</h1>
+        <div class="project-content card-area flex section-content">
+          <!-- Card: 1 -->
+          <div class="card-section">
+            <div class="card">
+              <div class="flip-card">
+                <div class="flip-card__container">
+                  <div class="card-front">
+                    <div class="card-front__tp bg-cover card-1 ">
+                      <!-- <h2 class="card-front__heading font-bold"> Weather Web Page </h2> -->
+                      <!-- <p class="card-front__text-price">From £29</p> -->
+                    </div>
+
+                    <div class="card-front__bt">
+                      <p class="card-front__text-view card-front__text-view--city">View me </p>
+                    </div>
+                  </div>
+                  <div class="card-back">
+                    <video class="video__container bg-white" autoplay muted loop>
+                      <source class="video__media" src="./Assets/WeatherApp.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                </div>
+              </div>
+
+              <div class="inside-page">
+                <div class="inside-page__container">
+                  <h3 class="inside-page__heading font-bold">Weather Web Page</h3>
+                  <p class="inside-page__text">
+                    As cities never sleep, there are always something going on, no matter what time!
+                  </p>
+                  <a href="https://github.com/AyanPaL7876/simple-weather-website" class="inside-page__btn">View details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card: 2 -->
+          <div class="card-section">
+          <div class="card">
+            <div class="flip-card">
+              <div class="flip-card__container">
+                <div class="card-front">
+                  <div class="card-front__tp card-2">
+                    <!-- <h2 class="card-front__heading"> City break </h2>
+                    <p class="card-front__text-price">From £29</p> -->
+                  </div>
+
+                  <div class="card-front__bt">
+                    <p class="card-front__text-view card-front__text-view--city">View me </p>
+                  </div>
+                </div>
+                <div class="card-back">
+                  <video class="video__container" autoplay muted loop>
+                    <source class="video__media" src="./Assets/VID_20240517015015.mp4" type="video/mp4">
+                  </video>
+                </div>
+              </div>
+            </div>
+
+            <div class="inside-page">
+              <div class="inside-page__container">
+                <h3 class="inside-page__heading inside-page__heading--city">Simon Says Game </h3>
+                <p class="inside-page__text">
+                  As cities never sleep, there are always something going on, no matter what time!
+                </p>
+                <a href="https://github.com/AyanPaL7876/Simon-Game" class="inside-page__btn inside-page__btn--city">View deals</a>
+              </div>
+            </div>
+          </div>
+          </div>
+
+          <!-- Card: Beach -->
+          <div class="card-section">
+          <div class="card">
+            <div class="flip-card">
+              <div class="flip-card__container">
+                <div class="card-front">
+                  <div class="card-front__tp card-front__tp--city">
+                    <h2 class="card-front__heading"> City break </h2>
+                    <p class="card-front__text-price">From £29</p>
+                  </div>
+
+                  <div class="card-front__bt">
+                    <p class="card-front__text-view card-front__text-view--city">View me </p>
+                  </div>
+                </div>
+                <div class="card-back">
+                  <video class="video__container" autoplay muted loop>
+                    <source class="video__media" src="./Assets/VID_20240517015015.mp4" type="video/mp4">
+                  </video>
+                </div>
+              </div>
+            </div>
+
+            <div class="inside-page">
+              <div class="inside-page__container">
+                <h3 class="inside-page__heading inside-page__heading--city">For urban lovers</h3>
+                <p class="inside-page__text">
+                  As cities never sleep, there are always something going on, no matter what time!
+                </p>
+                <a href="#" class="inside-page__btn inside-page__btn--city">View deals</a>
+              </div>
+            </div>
+          </div>
+          </div>
+
+          <!-- Card: Camping -->
+          <div class="card-section">
+          <div class="card">
+            <div class="flip-card">
+              <div class="flip-card__container">
+                <div class="card-front">
+                  <div class="card-front__tp card-front__tp--city">
+                    <h2 class="card-front__heading"> City break </h2>
+                    <p class="card-front__text-price">From £29</p>
+                  </div>
+
+                  <div class="card-front__bt">
+                    <p class="card-front__text-view card-front__text-view--city">View me </p>
+                  </div>
+                </div>
+                <div class="card-back">
+                  <video class="video__container" autoplay muted loop>
+                    <source class="video__media" src="./Assets/VID_20240517015015.mp4" type="video/mp4">
+                  </video>
+                </div>
+              </div>
+            </div>
+
+            <div class="inside-page">
+              <div class="inside-page__container">
+                <h3 class="inside-page__heading inside-page__heading--city">For urban lovers</h3>
+                <p class="inside-page__text">
+                  As cities never sleep, there are always something going on, no matter what time!
+                </p>
+                <a href="#" class="inside-page__btn inside-page__btn--city">View deals</a>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </section>
+      <hr>
+     
+      <section id="contuctMe" class="w-full  h-full flex items-center justify-center relative">
+        <form id="contact" class="contact-details" action="https://api.web3forms.com/submit" method="POST">
+          <!-- Replace with your Access Key -->
+          <input type="hidden" name="access_key" value="e8ab6a9e-2fd9-462c-a966-f458016a98e4">
+          <div class="section-heading flex justify-center flex-col">
+            <h4>Contact me</h4>
+            <p>fill up the form below to send me a massage</p>
+          </div>
+    
+          <div class="inputField ">
+            <input type="name" name="name" id="name" placeholder="👤Your full name" autocomplete="on" required>
+            <span class="valid_info_name "></span>
+          </div>
+    
+          <div class="inputField">
+            <input type="Email" name="email" id="email" placeholder="✉Your email" required="" />
+            <span class="valid_info_email"></span>
+          </div>
+    
+          <div class="inputField ">
+            <textarea name="message" id="message" placeholder="💬Your message"></textarea>
+            <span class="valid_info_message"></span>
+          </div>
+    
+          <div class="inputField btn">
+            <button type="submit" id="form-submit" class="main-gradient-button hover:scale-[1.15]">Send a message</button>
+          </div>
+    
+        </form>
+      </section>
+      <!-- <hr> -->
+
+      <footer class="bg-[#00000060] z-[100] w-full h-auto flex flex-col gap-[10px] items-center justify-center relative">
+        <h1 class="text-[40px] amsterdam p-10 min-h-20 text-[#fff]">Ayan pal</h1>
+  
+        <div class="flex gap-[15px] mb-5 ">
+          <!-- face book  -->
+          <a href="https://www.facebook.com/ayan.pal.3304" target="_blank" rel="noreferrer noopener"
+            class="grid place-items-center hover:scale-125">
+            <box-icon type='logo' name='facebook-circle' color='#fff' class="h-[40px] w-[40px]"></box-icon>
+          </a>
+  
+          <!-- insta  -->
+          <a href="https://www.instagram.com/ayan.pal__/" target="_blank" rel="noreferrer noopener"
+            class="grid place-items-center hover:scale-125">
+            <box-icon type='logo' name='instagram' color='#fff' class="h-[40px] w-[40px]"></box-icon>
+          </a>
+  
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/in/ayan-pal-6a4297255/" target="_blank" rel="noreferrer noopener"
+            class="grid place-items-center hover:scale-125 ">
+            <box-icon type='logo' name='linkedin-square' color='#fff' class="h-[40px] w-[40px]"></box-icon>
+          </a>
+  
+          <!-- twitter -->
+          <a href="https://x.com/AyanPaL7876" target="_blank" rel="noreferrer noopener"
+            class="grid place-items-center hover:scale-125">
+            <box-icon type='logo' name='twitter' color='#fff' class="h-[40px] w-[40px]"></box-icon>
+          </a>
+  
+          <!-- GitHub -->
+          <a href="https://github.com/AyanPaL7876" target="_blank" rel="noreferrer noopener"
+            class="grid place-items-center hover:scale-125">
+            <box-icon type='logo' name='github' color='#fff' class="h-[40px] w-[40px]"></box-icon>
+          </a>
+        </div>
+      </footer>
     </main>
 
-    <!-- script tag -->
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <script src="./script.js"></script>
-</body>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="./code..js"></script>
+    
+  </body>
 </html>
