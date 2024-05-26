@@ -9,7 +9,7 @@
     transform: scale(1);
     opacity: 1;
     filter: blur(0);
-    color: #6665ee;
+    color: #000;
     transition: all 0.5s;
   
   }
@@ -74,7 +74,7 @@
   
   
   
-  @media screen and (max-width: 2000px) {
+  @media screen and (max-width: 760px) {
     .navbar{
       justify-content: space-between;
       /* padding: 0 1.5rem !important; */
