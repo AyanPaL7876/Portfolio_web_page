@@ -63,7 +63,7 @@
   
   #skills .skills-content , .skill-bars{
     min-width: 90%;
-    gap: 50px;
+    /* gap: 50px; */
   }
 
   /* section 4 - project section  */
