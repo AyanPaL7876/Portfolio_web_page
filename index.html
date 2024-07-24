@@ -1,388 +1,804 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ayan's Personal Portfolio Site | Know About Me, Myself & I</title>
+    <link rel="icon" type="image" href="./Assets/peeps-avatar-alpha (1).png" />
+    <!--CSS-->
+    <link rel="stylesheet" href="./CSS/global.css" />
+    <link rel="stylesheet" href="./CSS/custom.btn.css" />
+    <link rel="stylesheet" href="./CSS/font.Amsterdam.css" />
+    <!--TailwindCSS-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <!-- Add Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  <title>Ayan pal - Portfolio</title>
-  <link rel="icon" type="image" href="./Assets/icon.svg">
-
-  <link rel="stylesheet" href="./CSS/output.css">
-  <link rel="stylesheet" href="./CSS/custom.btn.css">
-  <link rel="stylesheet" href="./CSS/custom.nav.css">
-  <link rel="stylesheet" href="./CSS/custom.skill.card.css">
-  <link rel="stylesheet" href="./CSS/custom.project.card.css">
-  <link rel="stylesheet" href="./CSS/custom.contuct.from.css">
-  <link rel="stylesheet" href="./CSS/style.css">
-  <link rel="stylesheet" href="./CSS/style.clock.css">
-  <link rel="stylesheet" href="./CSS/font.Amsterdam.css">
-</head>
-
-<body>
-  <span class="body-overlay"></span>
-  <nav class="container fixed top-0 left-0 min-w-full h-16 flex justify-center items-center z-[100] ">
-    <div class="site-navbar flex justify-between items-center w-5/6  text-[#fff] ">
-      <a class="text-2xl font-bold flex items-center cursor-pointer" href="#">
-        <svg width="200" height="148" viewBox="0 0 855 148" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M723.807 148H707.486L752.869 60.7273H771.491L787.898 148H771.577L759.688 78.1989H759.006L723.807 148ZM730.369 113.781H776.264L774.176 126.182H728.281L730.369 113.781Z"
-            fill="white" />
-          <path d="M798.324 148L812.812 60.7273H828.111L815.795 135.131H854.446L852.273 148H798.324Z" fill="white" />
-          <path
-            d="M234.011 146H206.81L282.449 0.54545H313.486L340.83 146H313.628L293.812 29.6648H292.676L234.011 146ZM244.949 88.9688H321.44L317.96 109.636H241.469L244.949 88.9688Z"
-            fill="white" />
-          <path
-            d="M621.54 147L645.688 1.54545H699.736C710.91 1.54545 719.93 3.62878 726.795 7.79545C733.708 11.9148 738.491 17.5966 741.142 24.8409C743.794 32.0379 744.362 40.2528 742.847 49.4858C741.331 58.7187 738.017 66.9574 732.903 74.2017C727.837 81.3987 721.137 87.0805 712.804 91.2472C704.471 95.3665 694.693 97.4261 683.472 97.4261H647.463L650.943 76.4034H683.756C690.432 76.4034 696.066 75.2434 700.659 72.9233C705.299 70.6032 708.945 67.4309 711.597 63.4062C714.295 59.3343 716.071 54.6941 716.923 49.4858C717.776 44.2301 717.515 39.6136 716.142 35.6364C714.816 31.6591 712.212 28.5578 708.33 26.3324C704.494 24.0597 699.239 22.9233 692.562 22.9233H667.705L647.037 147H621.54Z"
-            fill="white" />
-          <path
-            d="M566.318 58.7273L551.83 146H538.151L506.446 85.6591H505.679L495.622 146H480.324L494.812 58.7273H508.619L540.324 119.153H541.091L551.105 58.7273H566.318Z"
-            fill="white" />
-          <path
-            d="M408.807 146H392.486L437.869 58.7273H456.491L472.898 146H456.577L444.688 76.1989H444.006L408.807 146ZM415.369 111.781H461.264L459.176 124.182H413.281L415.369 111.781Z"
-            fill="white" />
-          <path
-            d="M342.719 58.7273H359.977L375.233 97.5483H376.17L404.125 58.7273H421.384L380.688 113.102L375.19 146H359.977L365.432 113.102L342.719 58.7273Z"
-            fill="white" />
-          <path
-            d="M0.610796 78.2784L2.61364 66.5597L64.9574 39.5L62.571 54.2443L18.125 72.2273L18.6364 71.4602L18.3381 73.3778L17.9545 72.5682L56.5625 90.5938L54.0909 105.295L0.610796 78.2784ZM123.509 15.6364L78.1676 120.125H65.1278L110.469 15.6364H123.509ZM185.671 78.2784L123.242 105.295L125.714 90.5938L170.075 72.5682L169.563 73.3778L169.862 71.4602L170.245 72.2273L131.722 54.2443L134.109 39.5L187.674 66.5597L185.671 78.2784Z"
-            fill="white" />
-        </svg>
-      </a>
-      <ul class="flex justify-end uppercase items-end nav-hover">
-        <li><a href="#home" class="cursor-pointer">Home</a></li>
-        <li><a href="#about" class="cursor-pointer">About</a></li>
-        <li><a href="#skills" class="cursor-pointer">skills</a></li>
-        <li><a href="#projects" class="cursor-pointer">Projects</a></li>
-        <li><a href="#contuctMe" class="cursor-pointer">Contact</a></li>
-      </ul>
-
-      <!-- nav-toggler for mobile version only -->
-      <button class="nav-toggler">
-        <span></span>
-      </button>
+  <body style="background-color: #0a0f16" class="px-5 pt-4 lg:px-40 md:px-20 m-0">
 
     </div>
-  </nav>
+    <div class="flex justify-between pt-10">
+      <div
+        class="lg:w-2/3 flex flex-col justify-start items-center lg:items-start max-w-6xl container p-5 lg:py-10"
+      >
+        <div
+          class="font-bold text-2xl lg:text-4xl flex justify-start items-start w-full h-10 align-start"
+        >
+          <!-- font-bold tracking-wide bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-500 hover:from-blue-500 hover:to-green-400 -->
+          <h1
+            class="font-bold tracking-wide bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-green-400"
+          >
+            I Am a <span id="typing"></span>
+          </h1>
+        </div>
+        <p
+          class="w-[100%] lg:w-5/6 py-10 text-gray-500 text-base text-center indent-8"
+        >
+          Hi, I am Ayan pal. I am 20 years old, Now i am a student. studing at
+          ADAMAS UNIVERSITY. I really like to think creatively as well as making
+          things pretty and easy to use. I can't stop learning new things, The
+          more the better. I also like writing codes
+        </p>
 
-  <main class="overflow-y-auto w-full h-full flex-col no-scrollbar text-neutral-950">
-    <section id="home" class="w-full min-h-full h-auto flex flex-col items-center justify-center relative">
-      <div class="w-4/6 flex flex-col justify-start section-content">
-        <h1 class="home-heading text-[55px] font-bold tracking-wide ">I Am <span id="typing"
-            class="text-[#5757ef]"></span></h1>
-        <p class="home-content w-4/6 py-10 font-semibold text-lg">I am 20 years old, Now i am a student. studing at
-          ADAMAS UNIVERSITY. I really like to think creatively as well as making things pretty and easy to use. I can't
-          stop learning new things, The more the better. I also like writing codes </p>
-        <div class="home-btn flex ">
-          <a href="https://www.canva.com/design/DAF86wHZJzA/1c_FVMnTH0YnnQOkpPji9g/edit?utm_content=DAF86wHZJzA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
-            target="_blank">
+        <div
+          class="lg:w-5/6 flex flex-col justify-center items-center lg:flex-row gap-5"
+        >
+          <a
+            href="https://www.canva.com/design/DAF86wHZJzA/1c_FVMnTH0YnnQOkpPji9g/edit?utm_content=DAF86wHZJzA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+            class="flex justify-center items-center"
+            target="_blank"
+          >
             <button class="resume-btn">
               Resume
               <div class="transition"></div>
             </button>
           </a>
-          <div class="flex ml-10">
-            <!-- LeetodeIcon  -->
-            <a href="https://leetcode.com/u/Ayan_7876/" target="_blank" rel="noreferrer noopener"
-              class="grid place-items-center hover:scale-125">
-              <img src="./Assets/leetcode.svg" alt="leetcodeIcon" class="h-[45px] w-[45px] p-0 m-0">
+          <div class="flex w-[150px] justify-around gap-5">
+            <!-- LinkedInIcon --> 
+            <a href="https://www.linkedin.com/in/ayan-pal-6a4297255/" target="_blank">
+              <i class="fa-brands fa-linkedin fa-2x transform hover:scale-125 duration-200 hover:text-blue-700 icon-color"></i>
             </a>
-            <!-- LinkedInIcon -->
-            <a href="https://www.linkedin.com/in/ayan-pal-6a4297255/" target="_blank" rel="noreferrer noopener"
-              class="mx-5 grid place-items-center hover:scale-125 ">
-              <box-icon type='logo' name='linkedin-square' color='#000' class="h-[50px] w-[50px]"></box-icon>
-            </a>
+            
             <!-- GitHubIcon  -->
-            <a href="https://github.com/AyanPaL7876" target="_blank" rel="noreferrer noopener"
-              class="grid place-items-center hover:scale-125">
-              <box-icon type='logo' name='github' color='#000' class="h-[50px] w-[50px]"></box-icon>
+            <a href="https://github.com/AyanPaL7876" target="_blank">
+              <i class="fa-brands fa-github fa-2x transform hover:scale-125 duration-200 hover:text-gray-100 icon-color"></i>
             </a>
+            
+            <!-- You Tube -->
+            <a href="https://www.youtube.com/@Ayan_pal" target="_blank">
+              <i class="fa-brands fa-youtube fa-2x transform hover:scale-125 duration-200 hover:text-red-700 icon-color"></i>
+            </a>
+            
+            <!-- discord  -->
+            <a href="https://discord.gg/Bm4Dnr5x" target="_blank">
+              <i class="fa-brands fa-discord fa-2x transform hover:scale-125 duration-200 hover:text-indigo-600 icon-color"></i>
+            </a>
+              
           </div>
         </div>
       </div>
-    </section>
-    <hr>
-
-    <section id="about" class="w-full min-h-full h-auto flex flex-col gap-[50px] items-center justify-center relative">
-      <h1 class="about-heading text-[45px] font-bold text-[#5757ef]">About me</h1>
-      <div class="w-4/6 flex justify-between items-center relative section-content">
-        <p class="about-content w-1/2 py-10 font-medium text-lg">I am currently pursuing a Bachelor's degree in Computer
-          Applications at Adamas University. My coursework includes a diverse range of subjects, providing me with a
-          comprehensive understanding of various computer applications and software development.<br><br>I am eager to
-          apply the knowledge and skills I have gained from my studies in a professional setting. I am particularly
-          interested in development.<br><br>Looking forward to graduating in 2025 and starting my career in the tech
-          industry.</p>
-        <div class="clock">
-          <img src="./clock template-01.svg">
-          <div class="hour hand" id="hour"></div>
-          <div class="minute hand" id="minute"></div>
-          <div class="seconds hand" id="seconds"></div>
-        </div>
+      <div class="hover:scale-150 transform-gpu w-0 lg:w-auto filter">
+        <img class="" src="./Assets/coadingGIF.gif" alt="gif" width="400" height="400" />
       </div>
-    </section>
-    <hr>
+    </div>
 
-    <section id="skills" class="w-full min-h-full h-auto flex flex-col gap-[50px] items-center justify-center relative">
-      <h1 class="skills-heading text-[45px] font-bold text-[#5757ef]">My skills</h1>
-    
-      <div class="skills-content w-4/6 items-center section-content">
-        <div class="skill-logo">
-          <img src="./Assets/icon/HTML5 logo.png" alt="HTML logo" width="100" height="200">
-        </div>
-        <div class="skill-logo">
-          <img src="./Assets/icon/CSS.png" alt="CSS logo" width="70" height="100">
-        </div>
-        <div class="skill-logo">
-          <img src="./Assets/icon/Tailwind_CSS_logo.png" alt="Tailwind CSS logo" width="120" height="200">
-        </div>
-        <div class="skill-logo">
-          <img src="./Assets/icon/Bootstrap_logo.png" alt="Tailwind CSS logo" width="80" height="100">
-        </div>
-        <div class="skill-logo">
-          <img src="./Assets/icon/JS_logo.png" alt="JavaScript logo" width="80" height="80">
-        </div>
-        <div class="skill-logo">
-          <img src="./Assets/icon/React_Logo.png" alt="React logo" width="80" height="100">
-        </div>
-        <div class="skill-logo">
-          <img src="./Assets/icon/MongoDB.png" alt="MongoDB logo" width="100" height="200">
-        </div>
-        <div class="skill-logo">
-          <img src="./Assets/icon/MySQL_logo.png" alt="MySQL logo" width="100" height="200">
-        </div>
-        <div class="skill-logo">
-          <img src="./Assets/icon/C++_Logo.png" alt="C++ logo" width="70" height="100">
-        </div>
-        <div class="skill-logo ">
-          <img src="./Assets/icon/GitHub_Logo.png" alt="GitHub logo" width="80" height="100">
-        </div>
-      </div>
-    </section>
-    
-    <hr>
+    <div
+      class="font-regular flex tracking-widest uppercase text-md text-gray-500 mt-20 mb-6"
+    >
+      Projects that I've worked for...
+    </div>
 
-    <section id="projects"
-      class="w-full min-h-full h-auto flex flex-col gap-[50px] items-center justify-center relative">
-      <h1 class="project-heading text-[45px] font-bold text-[#5757ef]">My Work</h1>
-      <div class="project-content card-area flex section-content">
-        <!-- Card: 1 -->
-        <div class="card-section">
-          <div class="card">
-            <div class="flip-card">
-              <div class="flip-card__container">
-                <div class="card-front">
-                  <div class="card-front__tp bg-cover card-1 ">
-                    <!-- <h2 class="card-front__heading font-bold"> Weather Web Page </h2> -->
-                    <!-- <p class="card-front__text-price">From £29</p> -->
-                  </div>
-
-                  <div class="card-front__bt">
-                    <p class="card-front__text-view card-front__text-view--city">View me </p>
-                  </div>
-                </div>
-                <div class="card-back">
-                  <video class="video__container bg-white" autoplay muted loop>
-                    <source class="video__media" src="./Assets/WeatherApp.mp4" type="video/mp4">
-                  </video>
-                </div>
+    <div class="row items-center justify-center mb-8">
+      <!-- simple weather app -->
+      <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/3">
+        <a
+          rel="noopener noreferrer"
+          href="https://simple-weather-website-eight.vercel.app/"
+          target="_blank"
+        >
+          <div
+            class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md sm:px-4 hover:bg-gray-100 cursor-pointer"
+            style="background-color: #0e141d; border-radius: 1vw"
+          >
+            <div class="flex items-center">
+              <div class="flex-initial ml-4 mr-6">
+                <img
+                  src="./Assets/weather-logo.avif"
+                  class="h-12 w-auto"
+                  alt="aepp"
+                />
               </div>
-            </div>
-
-            <div class="inside-page">
-              <div class="inside-page__container">
-                <h3 class="inside-page__heading font-bold">Weather Web Page</h3>
-                <p class="inside-page__text">
-                  As cities never sleep, there are always something going on, no matter what time!
+              <div class="flex-initial">
+                <h4 class="font-semibold text-md text-gray-600">
+                  Web Developer
+                </h4>
+                <h3 class="font-bold text-xl text-blue-500">
+                  Simple weather Website
+                </h3>
+                <p class="font-regular text-xs text-gray-500">
+                  Know the current weather in your city
                 </p>
-                <a href="https://github.com/AyanPaL7876/simple-weather-website" class="inside-page__btn">View
-                  details</a>
               </div>
             </div>
           </div>
-        </div>
+        </a>
+      </div>
 
-        <!-- Card: 2 -->
-        <div class="card-section">
-          <div class="card">
-            <div class="flip-card">
-              <div class="flip-card__container">
-                <div class="card-front">
-                  <div class="card-front__tp card-2">
-                    <!-- <h2 class="card-front__heading"> City break </h2>
-                    <p class="card-front__text-price">From £29</p> -->
-                  </div>
-
-                  <div class="card-front__bt">
-                    <p class="card-front__text-view card-front__text-view--city">View me </p>
-                  </div>
-                </div>
-                <div class="card-back">
-                  <video class="video__container" autoplay muted loop>
-                    <source class="video__media" src="./Assets/VID_20240517015015.mp4" type="video/mp4">
-                  </video>
-                </div>
+      <!-- simon says Game -->
+      <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/3">
+        <a
+          rel="noopener noreferrer"
+          href=" https://ayanpal7876.github.io/Simon-Game/"
+          target="_blank"
+        >
+          <div
+            class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md sm:px-4 hover:bg-gray-100 cursor-pointer"
+            style="background-color: #0e141d; border-radius: 1vw"
+          >
+            <div class="flex items-center">
+              <div class="flex-initial ml-4 mr-6">
+                <img
+                  src="./Assets/simos says logo.png"
+                  class="h-12 w-auto"
+                  alt="aepp"
+                />
               </div>
-            </div>
-
-            <div class="inside-page">
-              <div class="inside-page__container">
-                <h3 class="inside-page__heading inside-page__heading--city">Simon Says Game </h3>
-                <p class="inside-page__text">
-                  As cities never sleep, there are always something going on, no matter what time!
+              <div class="flex-initial">
+                <h4 class="font-semibold text-md text-gray-600">
+                  Web Developer
+                </h4>
+                <h3 class="font-bold text-xl text-blue-500">Simon says game</h3>
+                <p class="font-regular text-xs text-gray-500">
+                  Need to repeat a sequence of colors...
                 </p>
-                <a href="https://github.com/AyanPaL7876/Simon-Game" class="inside-page__btn inside-page__btn--city">View
-                  deals</a>
               </div>
             </div>
           </div>
-        </div>
+        </a>
+      </div>
 
-        <!-- Card: Beach -->
-        <div class="card-section">
-          <div class="card">
-            <div class="flip-card">
-              <div class="flip-card__container">
-                <div class="card-front">
-                  <div class="card-front__tp card-front__tp--city">
-                    <h2 class="card-front__heading"> City break </h2>
-                    <p class="card-front__text-price">From £29</p>
-                  </div>
-
-                  <div class="card-front__bt">
-                    <p class="card-front__text-view card-front__text-view--city">View me </p>
-                  </div>
-                </div>
-                <div class="card-back">
-                  <video class="video__container" autoplay muted loop>
-                    <source class="video__media" src="./Assets/VID_20240517015015.mp4" type="video/mp4">
-                  </video>
-                </div>
+      <!-- Cricket Score Calculator -->
+      <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/3">
+        <a
+          rel="noopener noreferrer"
+          href="https://github.com/AyanPaL7876/Cricket-Score-Calculator"
+          target="_blank"
+        >
+          <div
+            class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md sm:px-4 hover:bg-gray-100 cursor-pointer"
+            style="background-color: #0e141d; border-radius: 1vw"
+          >
+            <div class="flex items-center">
+              <div class="flex-initial ml-4 mr-6">
+                <img
+                  src="./Assets/ball logo.png"
+                  class="h-12 w-auto"
+                  alt="aepp"
+                />
               </div>
-            </div>
-
-            <div class="inside-page">
-              <div class="inside-page__container">
-                <h3 class="inside-page__heading inside-page__heading--city">For urban lovers</h3>
-                <p class="inside-page__text">
-                  As cities never sleep, there are always something going on, no matter what time!
+              <div class="flex-initial">
+                <h4 class="font-semibold text-md text-gray-600">
+                  Web Developer
+                </h4>
+                <h3 class="font-bold text-xl text-blue-500">
+                  Cricket Score Calculator
+                </h3>
+                <p class="font-regular text-xs text-gray-500">
+                  Calculate live cricket score.
                 </p>
-                <a href="#" class="inside-page__btn inside-page__btn--city">View deals</a>
               </div>
             </div>
           </div>
-        </div>
+        </a>
+      </div>
 
-        <!-- Card: Camping -->
-        <div class="card-section">
-          <div class="card">
-            <div class="flip-card">
-              <div class="flip-card__container">
-                <div class="card-front">
-                  <div class="card-front__tp card-front__tp--city">
-                    <h2 class="card-front__heading"> City break </h2>
-                    <p class="card-front__text-price">From £29</p>
-                  </div>
-
-                  <div class="card-front__bt">
-                    <p class="card-front__text-view card-front__text-view--city">View me </p>
-                  </div>
-                </div>
-                <div class="card-back">
-                  <video class="video__container" autoplay muted loop>
-                    <source class="video__media" src="./Assets/VID_20240517015015.mp4" type="video/mp4">
-                  </video>
-                </div>
+      <!-- Qr-Codes-Generator -->
+      <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/3">
+        <a
+          rel="noopener noreferrer"
+          href="https://ayanpal7876.github.io/Text-to-QR-generator/"
+          target="_blank"
+        >
+          <div
+            class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md sm:px-4 hover:bg-gray-100 cursor-pointer"
+            style="background-color: #0e141d; border-radius: 1vw"
+          >
+            <div class="flex items-center">
+              <div class="flex-initial ml-4 mr-6">
+                <img
+                  src="./Assets//Text-to-QR-generator logo.jpg"
+                  class="h-12 w-auto"
+                  alt="aepp"
+                />
+              </div>
+              <div class="flex-initial">
+                <h4 class="font-semibold text-md text-gray-600">
+                  Web Developer
+                </h4>
+                <h3 class="font-bold text-xl text-blue-500">
+                  Qr-Codes-Generator
+                </h3>
+                <p class="font-regular text-xs text-gray-500">
+                  Text to QR Codes Generator,...
+                </p>
               </div>
             </div>
+          </div>
+        </a>
+      </div>
+    </div>
 
-            <div class="inside-page">
-              <div class="inside-page__container">
-                <h3 class="inside-page__heading inside-page__heading--city">For urban lovers</h3>
-                <p class="inside-page__text">
-                  As cities never sleep, there are always something going on, no matter what time!
-                </p>
-                <a href="#" class="inside-page__btn inside-page__btn--city">View deals</a>
-              </div>
+    <!--Technologies that I use-->
+    <div
+      class="text-left font-regular tracking-widest uppercase text-sm text-gray-500 mt-16 mb-6"
+    >
+      Languages & Technologies I use
+    </div>
+
+    <div class="row items-center justify-center mb-8">
+      <!--JavaScript-->
+      <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/4">
+        <div
+          class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer"
+          style="background-color: #0e141d; border-radius: 1vw"
+        >
+          <div class="flex items-center">
+            <div class="flex-initial ml-4 mr-6">
+              <img
+                width="40"
+                height="50"
+                src="https://skillicons.dev/icons?i=js"
+              />
+            </div>
+            <div class="flex-initial">
+              <div class="font-bold text-lg text-white">JavaScript</div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <hr>
 
-    <section id="contuctMe" class="w-full  h-full flex items-center justify-center relative">
-      <form id="contact" class="contact-details" action="https://api.web3forms.com/submit" method="POST">
-        <!-- Replace with your Access Key -->
-        <input type="hidden" name="access_key" value="e8ab6a9e-2fd9-462c-a966-f458016a98e4">
-        <div class="section-heading flex justify-center flex-col">
-          <h4>Contact me</h4>
-          <p>fill up the form below to send me a massage</p>
+      <!--HTML5-->
+      <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/4">
+        <div
+          class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer"
+          style="background-color: #0e141d; border-radius: 1vw"
+        >
+          <div class="flex items-center">
+            <div class="flex-initial ml-4 mr-6">
+              <img
+                width="40"
+                height="50"
+                src="https://skillicons.dev/icons?i=html"
+              />
+            </div>
+            <div class="flex-initial">
+              <div class="font-bold text-lg text-white">HTML5</div>
+            </div>
+          </div>
         </div>
-
-        <div class="inputField ">
-          <input type="name" name="name" id="name" placeholder="👤Your full name" autocomplete="on" required>
-          <span class="valid_info_name "></span>
-        </div>
-
-        <div class="inputField">
-          <input type="Email" name="email" id="email" placeholder="✉Your email" required="" />
-          <span class="valid_info_email"></span>
-        </div>
-
-        <div class="inputField ">
-          <textarea name="message" id="message" placeholder="💬Your message"></textarea>
-          <span class="valid_info_message"></span>
-        </div>
-
-        <div class="inputField btn">
-          <button type="submit" id="form-submit" class="main-gradient-button hover:scale-[1.15]">Send a message</button>
-        </div>
-
-      </form>
-    </section>
-    <!-- <hr> -->
-
-    <footer class="bg-[#00000060] z-[100] w-full h-auto flex flex-col gap-[10px] items-center justify-center relative">
-      <h1 class="text-[40px] amsterdam p-10 min-h-20 text-[#fff]">Ayan pal</h1>
-
-      <div class="flex gap-[15px] mb-5 ">
-        <!-- face book  -->
-        <a href="https://www.facebook.com/ayan.pal.3304" target="_blank" rel="noreferrer noopener"
-          class="grid place-items-center hover:scale-125">
-          <box-icon type='logo' name='facebook-circle' color='#fff' class="h-[40px] w-[40px]"></box-icon>
-        </a>
-
-        <!-- insta  -->
-        <a href="https://www.instagram.com/ayan.pal__/" target="_blank" rel="noreferrer noopener"
-          class="grid place-items-center hover:scale-125">
-          <box-icon type='logo' name='instagram' color='#fff' class="h-[40px] w-[40px]"></box-icon>
-        </a>
-
-        <!-- LinkedIn -->
-        <a href="https://www.linkedin.com/in/ayan-pal-6a4297255/" target="_blank" rel="noreferrer noopener"
-          class="grid place-items-center hover:scale-125 ">
-          <box-icon type='logo' name='linkedin-square' color='#fff' class="h-[40px] w-[40px]"></box-icon>
-        </a>
-
-        <!-- twitter -->
-        <a href="https://x.com/AyanPaL7876" target="_blank" rel="noreferrer noopener"
-          class="grid place-items-center hover:scale-125">
-          <box-icon type='logo' name='twitter' color='#fff' class="h-[40px] w-[40px]"></box-icon>
-        </a>
-
-        <!-- GitHub -->
-        <a href="https://github.com/AyanPaL7876" target="_blank" rel="noreferrer noopener"
-          class="grid place-items-center hover:scale-125">
-          <box-icon type='logo' name='github' color='#fff' class="h-[40px] w-[40px]"></box-icon>
-        </a>
       </div>
-    </footer>
-  </main>
 
-  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-  <script src="./code.js"></script>
+      <!--npm-->
+      <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/4">
+        <div
+          class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer"
+          style="background-color: #0e141d; border-radius: 1vw"
+        >
+          <div class="flex items-center">
+            <div class="flex-initial ml-4 mr-6">
+              <img
+                width="40"
+                height="50"
+                src="https://skillicons.dev/icons?i=npm"
+              />
+            </div>
+            <div class="flex-initial">
+              <div class="font-bold text-lg text-white">npm</div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-</body>
+      <!-- React -->
+      <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/4">
+        <div
+          class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer"
+          style="background-color: #0e141d; border-radius: 1vw"
+        >
+          <div class="flex items-center">
+            <div class="flex-initial ml-4 mr-6">
+              <img
+                width="40"
+                height="50"
+                src="./Assets/logos/raect logo.png"
+                alt="My Happy PNG"
+              />
+            </div>
+          </div>
+          <div class="flex-initial">
+            <div class="font-bold text-lg text-white">React</div>
+          </div>
+        </div>
+      </div>
 
+      <!-- express -->
+      <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/4">
+        <div
+          class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer"
+          style="background-color: #0e141d; border-radius: 1vw"
+        >
+          <div class="flex items-center">
+            <div class="flex-initial ml-4 mr-6">
+              <img
+                width="40"
+                height="50"
+                src="https://skillicons.dev/icons?i=express"
+                alt="My Happy PNG"
+              />
+            </div>
+          </div>
+          <div class="flex-initial">
+            <div class="font-bold text-lg text-white">Express</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- NodeJS -->
+      <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/4">
+        <div
+          class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer"
+          style="background-color: #0e141d; border-radius: 1vw"
+        >
+          <div class="flex items-center">
+            <div class="flex-initial ml-4 mr-6">
+              <img
+                width="40"
+                height="50"
+                src="https://skillicons.dev/icons?i=nodejs"
+              />
+            </div>
+            <div class="flex-initial">
+              <div class="font-bold text-lg text-white">NodeJS</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Next Js -->
+      <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/4">
+        <div
+          class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer"
+          style="background-color: #0e141d; border-radius: 1vw"
+        >
+          <div class="flex items-center">
+            <div class="flex-initial ml-4 mr-6">
+              <img
+                width="40"
+                height="50"
+                src="https://skillicons.dev/icons?i=nextjs"
+              />
+            </div>
+            <div class="flex-initial">
+              <div class="font-bold text-lg text-white">Next Js</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--CSS3-->
+      <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/4">
+        <div
+          class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer"
+          style="background-color: #0e141d; border-radius: 1vw"
+        >
+          <div class="flex items-center">
+            <div class="flex-initial ml-4 mr-6">
+              <img
+                width="40"
+                height="50"
+                src="https://skillicons.dev/icons?i=css"
+              />
+            </div>
+            <div class="flex-initial">
+              <div class="font-bold text-lg text-white">CSS3</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--SCSS-->
+      <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/4">
+        <div
+          class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer"
+          style="background-color: #0e141d; border-radius: 1vw"
+        >
+          <div class="flex items-center">
+            <div class="flex-initial ml-4 mr-6">
+              <img
+                width="40"
+                height="50"
+                src="https://skillicons.dev/icons?i=scss"
+              />
+            </div>
+            <div class="flex-initial">
+              <div class="font-bold text-lg text-white">SCSS</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--TailwindCSS-->
+      <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/4">
+        <div
+          class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer"
+          style="background-color: #0e141d; border-radius: 1vw"
+        >
+          <div class="flex items-center">
+            <div class="flex-initial ml-4 mr-6">
+              <img
+                width="40"
+                height="50"
+                src="https://skillicons.dev/icons?i=tailwind"
+              />
+            </div>
+            <div class="flex-initial">
+              <div class="font-bold text-lg text-white">Tailwind CSS</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Python-->
+      <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/4">
+        <div
+          class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer"
+          style="background-color: #0e141d; border-radius: 1vw"
+        >
+          <div class="flex items-center">
+            <div class="flex-initial ml-4 mr-6">
+              <img
+                width="40"
+                height="50"
+                src="https://skillicons.dev/icons?i=py"
+              />
+            </div>
+            <div class="flex-initial">
+              <div class="font-bold text-lg text-white">Python</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Cpp -->
+      <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/4">
+        <div
+          class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer"
+          style="background-color: #0e141d; border-radius: 1vw"
+        >
+          <div class="flex items-center">
+            <div class="flex-initial ml-4 mr-6">
+              <img
+                width="40"
+                height="50"
+                src="https://skillicons.dev/icons?i=cpp"
+              />
+            </div>
+            <div class="flex-initial">
+              <div class="font-bold text-lg text-white">C++</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Mongo Db-->
+      <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/4">
+        <div
+          class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer"
+          style="background-color: #0e141d; border-radius: 1vw"
+        >
+          <div class="flex items-center">
+            <div class="flex-initial ml-4 mr-6">
+              <img
+                width="40"
+                height="50"
+                src="https://skillicons.dev/icons?i=mongodb"
+              />
+            </div>
+            <div class="flex-initial">
+              <div class="font-bold text-lg text-white">Mobgo DB</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--MY SQL-->
+      <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/4">
+        <div
+          class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer"
+          style="background-color: #0e141d; border-radius: 1vw"
+        >
+          <div class="flex items-center">
+            <div class="flex-initial ml-4 mr-6">
+              <img
+                width="40"
+                height="50"
+                src="https://skillicons.dev/icons?i=mysql"
+              />
+            </div>
+            <div class="flex-initial">
+              <div class="font-bold text-lg text-white">My SQL</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--postman-->
+      <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/4">
+        <div
+          class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer"
+          style="background-color: #0e141d; border-radius: 1vw"
+        >
+          <div class="flex items-center">
+            <div class="flex-initial ml-4 mr-6">
+              <img
+                width="40"
+                height="50"
+                src="https://skillicons.dev/icons?i=postman"
+              />
+            </div>
+            <div class="flex-initial">
+              <div class="font-bold text-lg text-white">Post man</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- canva  -->
+      <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/4">
+        <div
+          class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer"
+          style="background-color: #0e141d; border-radius: 1vw"
+        >
+          <div class="flex items-center">
+            <div class="flex-initial ml-4 mr-6">
+              <img width="40" height="50" src="./Assets/logos/Canva_icon.svg" />
+            </div>
+          </div>
+          <div class="flex-initial">
+            <div class="font-bold text-lg text-white">Canva</div>
+          </div>
+        </div>
+      </div>
+
+      <!--GitHub-->
+      <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/4">
+        <div
+          class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer"
+          style="background-color: #0e141d; border-radius: 1vw"
+        >
+          <div class="flex items-center">
+            <div class="flex-initial ml-4 mr-6">
+              <img
+                width="40"
+                height="50"
+                src="https://skillicons.dev/icons?i=github"
+              />
+            </div>
+            <div class="flex-initial">
+              <div class="font-bold text-lg text-white">GitHub</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Visual Studio Code-->
+      <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/4">
+        <div
+          class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer"
+          style="background-color: #0e141d; border-radius: 1vw"
+        >
+          <div class="flex items-center">
+            <div class="flex-initial ml-4 mr-6">
+              <img
+                width="40"
+                height="50"
+                src="https://skillicons.dev/icons?i=vscode"
+              />
+            </div>
+            <div class="flex-initial">
+              <div class="font-bold text-lg text-white">VS Code</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Windows-->
+      <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/4">
+        <div
+          class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer"
+          style="background-color: #0e141d; border-radius: 1vw"
+        >
+          <div class="flex items-center">
+            <div class="flex-initial ml-4 mr-6">
+              <img
+                width="40"
+                height="50"
+                src="https://skillicons.dev/icons?i=windows"
+              />
+            </div>
+            <div class="flex-initial">
+              <div class="font-bold text-lg text-white">Windows</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Figma-->
+      <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/4">
+        <div
+          class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer"
+          style="background-color: #0e141d; border-radius: 1vw"
+        >
+          <div class="flex items-center">
+            <div class="flex-initial ml-4 mr-6">
+              <img
+                width="40"
+                height="50"
+                src="https://skillicons.dev/icons?i=figma"
+              />
+            </div>
+          </div>
+          <div class="flex-initial">
+            <div class="font-bold text-lg text-white">Figma</div>
+          </div>
+        </div>
+      </div>
+
+      <!--Discord-->
+      <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/4">
+        <div
+          class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer"
+          style="background-color: #0e141d; border-radius: 1vw"
+        >
+          <div class="flex items-center">
+            <div class="flex-initial ml-4 mr-6">
+              <img
+                width="40"
+                height="50"
+                src="https://skillicons.dev/icons?i=discord"
+              />
+            </div>
+            <div class="flex-initial">
+              <div class="font-bold text-lg text-white">Discord</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!--Activity Status-->
+    <div class="flex flex-col gap-6 lg:flex-row items-center justify-around mt-16 mb-4 lg:mb-16 ">
+      <div class="flex items-center justify-center flex-col">
+      <div class="text-center lg:text-left font-regular tracking-widest uppercase text-sm text-gray-500 mt-0 mb-6">
+        Availability <span class="bg-red-500 text-white rounded-sm text-sm p-1 lowercase italic">Unavailable</span>, <span class="bg-green-500 text-white rounded-sm text-sm p-1 lowercase italic">Available</span>
+      </div>
+      <div
+        class="rounded-md p-6 sm:px-4 col mb-8 font-semibold text-lg flex items-center justify-center"
+        style="background-color: #0e141d"
+      >
+        <div class="flex items-center justify-center">
+          <div
+            class="grid grid-rows-4 grid-flow-col gap-4 text-white content-center"
+          >
+            <div class="grid grid-cols-8 gap-4 content-center">
+              <span></span>
+              <span>M</span>
+              <span>T</span>
+              <span>W</span>
+              <span>T</span>
+              <span>F</span>
+              <span>S</span>
+              <span>S</span>
+            </div>
+            <div class="grid grid-cols-8 gap-3 content-center">
+              <span>🌞</span>
+              <div class="bg-red-500 rounded-sm"></div>
+              <div class="bg-red-500 rounded-sm"></div>
+              <div class="bg-red-500 rounded-sm"></div>
+              <div class="bg-red-500 rounded-sm"></div>
+              <div class="bg-red-500 rounded-sm"></div>
+              <div class="bg-green-500 rounded-sm"></div>
+              <div class="bg-red-500 rounded-sm"></div>
+            </div>
+            <div class="grid grid-cols-8 gap-3 content-center">
+              <span>🌇</span>
+              <div class="bg-red-500 rounded-sm"></div>
+              <div class="bg-red-500 rounded-sm"></div>
+              <div class="bg-red-500 rounded-sm"></div>
+              <div class="bg-red-500 rounded-sm"></div>
+              <div class="bg-red-500 rounded-sm"></div>
+              <div class="bg-green-500 rounded-sm"></div>
+              <div class="bg-green-500 rounded-sm"></div>
+            </div>
+            <div class="grid grid-cols-8 gap-3 content-center">
+              <span>🌛</span>
+              <div class="bg-red-500 rounded-sm"></div>
+              <div class="bg-red-500 rounded-sm"></div>
+              <div class="bg-red-500 rounded-sm"></div>
+              <div class="bg-red-500 rounded-sm"></div>
+              <div class="bg-green-500 rounded-sm"></div>
+              <div class="bg-red-500 rounded-sm"></div>
+              <div class="bg-green-500 rounded-sm"></div>
+            </div>
+          </div>
+        </div>
+    </div>
+    </div>
+
+    <form 
+    id="contact" 
+    class="py-8 px-8 rounded-lg w-[300px] flex flex-col gap-4" 
+    style="background-color: #151d29"
+    action="https://api.web3forms.com/submit" method="POST">
+      <!-- Replace with your Access Key -->
+      <input type="hidden" name="access_key" value="e8ab6a9e-2fd9-462c-a966-f458016a98e4">
+      <div 
+      class="text-white">
+        <h4 class="text-3xl text-gray-400">Contact me</h4>
+        <p class="text-gray-500">fill up the form below to send me a massage</p>
+      </div>
+
+      <div class="">
+        <input type="name"
+        class="w-full p-2 rounded-lg bg-gray-500 placeholder-gray-100"
+        name="name" 
+        placeholder="👤 Your full name" 
+        autocomplete="off" 
+        required>
+      </div>
+
+      <div class="">
+        <input 
+        class="w-full p-2 rounded-lg bg-gray-500 placeholder-gray-100"
+        type="Email" 
+        name="email" 
+        id="email" 
+        placeholder="✉ Your email" 
+        required />
+      </div>
+
+      <div class="">
+        <textarea 
+        class="w-full p-2 rounded-lg bg-gray-500 placeholder-gray-100"
+        name="message" 
+        id="message" 
+        placeholder="💬 Your message"></textarea>
+      </div>
+
+      <div class="m-2">
+        <button 
+          type="submit" 
+          id="form-submit" 
+          class="py-2 px-4 rounded-xl bg-gradient-to-r from-blue-500 to-green-400 hover:from-pink-500  hover:to-purple-400">
+          Send a message
+        </button>
+      </div>
+
+    </form>
+    </div>
+
+    <div class="flex items-center justify-center">
+      <p class="pt-5 center font-sm text-lg font-semibold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-green-400 hover:from-pink-500 hover:to-purple-400 h-20">
+        Copyright<span class="amsterdam"> Ayan pal </span>&nbsp;© 2024
+      </p>
+    </div>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="./code.js"></script>
+  </body>
 </html>

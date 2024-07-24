@@ -22,7 +22,7 @@
 
 
 .resume-btn:hover{
-    border: 1px solid #6665ee;
+    border: 1px solid #3b82f6;
       /* color: #80ffd3!important; */
 }
 .resume-btn::before {
@@ -30,7 +30,7 @@
     width: 0%;
     height: 100%;
     display: block;
-    background: #6665ee;
+    background: #3b82f6;
     position: absolute;
       -ms-transform: skewX(-20deg);
     -webkit-transform: skewX(-20deg); 
